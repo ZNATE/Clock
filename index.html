@@ -81,7 +81,7 @@
 
         var timeString = date.getHours() + ':' + ('0' + date.getMinutes()).slice(-2)
         var inString =(7 - date.getHours()) + ':' + ('0' + (60 - date.getMinutes())).slice(-2)
-        if (date.getHours() > 8) {
+        if (date.getHours() > 7) {
 	var inString =(31 - date.getHours()) + ':' + ('0' + (60 - date.getMinutes())).slice(-2);
         }
         var dateString = (date.getMonth() + 1) + '月' + date.getDate() + '日'
