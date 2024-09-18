@@ -82,27 +82,27 @@
         var timeString = date.getHours() + ':' + ('0' + date.getMinutes()).slice(-2) //将分钟数补0
 		
         if (date.getHours() < 24) {
-			var inString =  '距离早八还有：' + (31 - date.getHours()) + '小时';
+	var inString =  '早八还有' + (31 - date.getHours()) + '小时';
         }
 		
-		if (date.getHours() < 18) {
-			var inString = (date.getHours() - 8)
-			var inString = "距离早八已过：" + inString + "小时" + ('0' + date.getMinutes()).slice(-2) + "分";
-		}
+        if (date.getHours() < 18) {
+	var inString = (date.getHours() - 8)
+	var inString = "早八已过" + inString + "小时";
+        }
 
-		if (date.getHours() == 8) {
-			var inString = "现在是早八";
-		}
+        if (date.getHours() == 8) {
+	var inString = "现在早八";
+        }
 
-		if (date.getHours() < 8) {
-			var inString = (8 - 1 - date.getHours())*60 + (60 - date.getMinutes());
-			var inString = "早八还有：" + inString + "分";
-		}
+        if (date.getHours() < 8) {
+	var inString = (8 - 1 - date.getHours())*60 + (60 - date.getMinutes());
+	var inString = "早八还有" + inString + "分钟";
+        }
 		  
-		if (date.getHours() < 6) {
-			var inString = 7 - date.getHours();
-			var inString = "早八还有：" + inString + "小时";
-		}
+        if (date.getHours() < 6) {
+	var inString = 7 - date.getHours();
+	var inString = "早八还有" + inString + "小时";
+        }
 
         var dateString = (date.getMonth() + 1) + '月' + date.getDate() + '日'
         var weekList = ['日', '一', '二', '三', '四', '五', '六']
